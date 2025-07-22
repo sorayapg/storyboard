@@ -8,6 +8,7 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Storyboard from './sections/Storyboard';
 import Projects from './sections/Projects';
+import CoverLetter from './sections/CoverLetter'; // Importar la nueva sección de la Carta de Presentación
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <main className="flex-grow"> {/* Contenedor principal que ocupa el espacio restante */}
         <Hero /> {/* Sección de bienvenida */}
         <About /> {/* Sección sobre ti (CV y carta) */}
+        <CoverLetter /> {/* Sección de la Carta de Presentación */}
         <Storyboard /> {/* Sección del storyboard */}
         <Projects /> {/* Sección de proyectos */}
       </main>
