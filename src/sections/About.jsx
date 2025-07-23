@@ -6,38 +6,33 @@ function About() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">Sobre Mí</h2>
 
-        <div className="flex flex-wrap items-center">
-          {/* Columna de texto */}
-          <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0">
-            <p className="text-lg mb-4">
-              Soy Desarrolladora Front-End Junior con experiencia en la creación de interfaces de usuario interactivas y responsivas utilizando tecnologías como React, JavaScript, HTML5, CSS3 y Jest. Mi enfoque se centra en construir soluciones eficientes, bien estructuradas y visualmente atractivas, siempre con una fuerte atención al detalle y una pasión por el diseño web y la experiencia de usuario (UX/UI).
-            </p>
-            <p className="text-lg mb-4">
-              He trabajado en proyectos para clientes de alto perfil como CaixaBank, aplicando metodologías ágiles como Scrum. Tuve la oportunidad de participar en un proyecto galardonado de cálculo y reducción de huella de carbono, lo que me permitió combinar el desarrollo web con la sostenibilidad, aportando soluciones tecnológicas con impacto real.
-            </p>
-            <p className="text-lg">
-              Busco un entorno dinámico donde seguir creciendo y aportar valor a través de mi capacidad de aprendizaje continuo y trabajo en equipo. También he desarrollado una aplicación completa tipo calendario, AppCalendar, utilizando React, Node.js y MongoDB, que refleja mi compromiso con la creación de soluciones funcionales y estéticas.
-            </p>
-            {/* Botón para descargar el CV */}
-            <a
-              href="/documents/Curriculum vitae.pdf"
-              download="Curriculum vitae.pdf"
-              className="mt-4 inline-block bg-pink-500 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-pink-600 transition duration-300"
-            >
-              Descargar CV
-            </a>
-          </div>
-
-          {/* Columna para la imagen (opcional) o elementos visuales */}
-          <div className="w-full md:w-1/2">
-            {/* Aquí podrías añadir tu foto (si no la pusiste en Hero), un icono o un elemento de diseño */}
-             {/* <img src="/images/tu-foto.jpg" alt="Soraya Povedano" className="mx-auto rounded-full w-40 h-40 object-cover mb-8" /> */}
-             {/* O quizás elementos gráficos abstractos con colores pastel */}
-             <div className="bg-purple-200 w-3/4 h-64 mx-auto rounded-lg shadow-lg"></div> {/* Ejemplo de un bloque de color pastel */}
-          </div>
+        {/* Contenedor de la imagen (arriba) */}
+        <div className="text-center mb-8"> {/* Centramos la imagen y añadimos margen inferior */}
+           <img src="/images/Soraya.png" alt="Soraya Povedano" className="mx-auto rounded-full w-40 h-40 object-cover" />
         </div>
 
-        {/* Nueva sección de Habilidades */}
+        {/* Contenedor del texto (abajo) */}
+        <div className="text-left"> {/* Eliminamos max-w-md y mx-auto, mantenemos text-left */}
+          <p className="text-lg mb-4">
+            Soy Desarrolladora Front-End Junior con experiencia en la creación de interfaces de usuario interactivas y responsivas utilizando tecnologías como React, JavaScript, HTML5, CSS3 y Jest. Mi enfoque se centra en construir soluciones eficientes, bien estructuradas y visualmente atractivas, siempre con una fuerte atención al detalle y una pasión por el diseño web y la experiencia de usuario (UX/UI).
+          </p>
+          <p className="text-lg mb-4">
+            He trabajado en proyectos para clientes de alto perfil como CaixaBank, aplicando metodologías ágiles como Scrum. Tuve la oportunidad de participar en un proyecto galardonado de cálculo y reducción de huella de carbono, lo que me permitió combinar el desarrollo web con la sostenibilidad, aportando soluciones tecnológicas con impacto real.
+          </p>
+          <p className="text-lg">
+            Busco un entorno dinámico donde seguir creciendo y aportar valor a través de mi capacidad de aprendizaje continuo y trabajo en equipo. También he desarrollado una aplicación completa tipo calendario, AppCalendar, utilizando React, Node.js y MongoDB, que refleja mi compromiso con la creación de soluciones funcionales y estéticas.
+          </p>
+          {/* Botón para descargar el CV */}
+          <a
+            href="/documents/Curriculum vitae.pdf"
+            download="Curriculum vitae.pdf"
+            className="mt-4 inline-block bg-pink-500 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-pink-600 transition duration-300"
+          >
+            Descargar CV
+          </a>
+        </div>
+
+        {/* Nueva sección de Habilidades (esta se mantiene igual) */}
         <div className="mt-12"> {/* Margen superior */}
           <h3 className="text-2xl font-bold text-center mb-6">Habilidades Técnicas</h3>
           <div className="flex flex-wrap justify-center gap-4"> {/* Flex container para los badges, centrado y con espacio entre ellos */}
@@ -56,7 +51,6 @@ function About() {
             <span className="bg-blue-300 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Git/GitHub</span>
             {/* Puedes añadir más habilidades según lo necesites */}
           </div>
-          {/* Eliminada la llave de cierre innecesaria */}
         </div>
       </div>
     </section>

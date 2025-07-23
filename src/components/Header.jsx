@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       {/* Header content will go here */}
-      <h1>My Portfolio Header</h1>
+      {/* <h1>Mi Portafolio</h1> Eliminado */}
     </header>
   );
 }

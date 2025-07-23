@@ -1,36 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function CoverLetter() {
+  const [modalAbierta, setModalAbierta] = useState(false);
+
+  const abrirModal = () => setModalAbierta(true);
+  const cerrarModal = () => setModalAbierta(false);
+
+  const textoResumido = "Un breve resumen de mi carta de presentación..."; // Puedes escribir aquí el texto resumido
+
   return (
-    <section className="py-16 bg-gray-100 text-gray-800"> {/* Ejemplo con fondo gris */}
+    <section className="py-16 bg-gray-100 text-gray-800">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">Carta de Presentación</h2>
-        <div className="prose lg:prose-xl mx-auto">
-          <p>
-            Me llamo Soraya y soy desarrolladora Front-End. Pero más allá del código, vivo el diseño como una forma de expresión. Me apasiona crear experiencias digitales que sean tan funcionales como hermosas, y cada interfaz que diseño lleva algo de mí: curiosidad, emoción y propósito.
-          </p>
-          <p>
-            Me encanta diseñar, programar y aprender. He creado desde aplicaciones prácticas como una App tipo calendario, que puedes visitar aquí:
-            <br /> {/* Salto de línea para el enlace */}
-            🔗 <a href="https://calendar-app-backend-pro.up.railway.app/auth/login" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">CalendarApp</a>
-            , desarrollada en React, Node.js y MongoDB, hasta proyectos con impacto ecológico como el cálculo de huella de carbono.
-            En cada línea de código hay compromiso, detalle y creatividad: creo con las manos lo que imagino con la mente.
-          </p>
-          <p>
-            Trabajo en equipo, comunicación clara y mejora continua son esenciales para mí.
-            Me formé en entornos ágiles, colaboré con profesionales diversos y siempre estoy buscando cómo mejorar el producto... y a mí misma.
-            Para mí, programar es pensar en las personas.
-          </p>
-          <p>
-            Quiero que el desarrollo web tenga alma. Que cada proyecto sea una carta visual que diga “aquí hay alguien que se preocupa por los detalles”.
-            Creo en la sostenibilidad, la empatía, el arte digital y en usar la tecnología para mejorar cómo vivimos y nos comunicamos.
-          </p>
-          <p>
-            El desarrollo web necesita funcionalidad, seguridad y experiencia de usuario.
-            Pero sin diseño, la tecnología no emociona.
-            La creatividad da vida a lo digital — porque lo que conecta, también se diseña.
-          </p>
+
+        <div className="flex justify-center">
+          <img
+            src="/images/Carta de presentación.png"
+            alt="Carta de Presentación"
+            className="mx-auto w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer" // Eliminadas md:w-1/2 y lg:w-1/3
+            onClick={abrirModal}
+          />
         </div>
+
+        {modalAbierta && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            onClick={cerrarModal} // cerrar modal clic fondo
+          >
+            <div
+              className="bg-white p-6 rounded-lg shadow-xl max-w-2xl max-h-full overflow-y-auto relative"
+              onClick={e => e.stopPropagation()} // evitar cerrar al hacer clic dentro
+            >
+              <button
+                className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-xl font-bold"
+                onClick={cerrarModal}
+                aria-label="Cerrar modal"
+              >
+                &times;
+              </button>
+
+              <img
+                src="/images/Carta de presentación.png"
+                alt="Carta de Presentación ampliada"
+                className="w-full h-auto object-contain mb-4 rounded-lg"
+              />
+              <p className="text-gray-700 text-left">
+                {textoResumido}
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
