@@ -11,7 +11,7 @@ function Storyboard() {
           {/* Viñeta 1 */}
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col items-center bg-white rounded-xl shadow-xl border-2 border-gray-400 overflow-hidden">
             <div className="w-full h-96"> {/* Altura cambiada a h-96 */}
-              <img src="/images/holamundo.png" alt="Viñeta 1: ¡Hola mundo! asdasd" className="w-full h-full object-cover" />
+              <img src="/images/soraya0.png" alt="Viñeta 1: ¡Hola mundo! asdasd" className="w-full h-full object-cover" />
             </div>
             <div className="w-full p-6">
               <h3 className="text-xl font-semibold mb-2 text-left">🎀 Viñeta 1: ¡Hola mundo!</h3>

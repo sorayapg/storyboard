@@ -24,8 +24,8 @@ function About() {
           </p>
           {/* Botón para descargar el CV */}
           <a
-            href="/documents/Curriculum vitae.pdf"
-            download="Curriculum vitae.pdf"
+            href="/documents/cv-soraya-povedano-gallardo.pdf"
+            download="Curriculum Vitae Soraya Povedano.pdf"
             className="mt-4 inline-block bg-pink-500 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-pink-600 transition duration-300"
           >
             Descargar CV
