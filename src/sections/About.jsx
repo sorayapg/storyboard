@@ -14,17 +14,20 @@ function About() {
         {/* Contenedor del texto (abajo) */}
         <div className="text-left"> {/* Eliminamos max-w-md y mx-auto, mantenemos text-left */}
           <p className="text-lg mb-4">
-            Soy Desarrolladora Front-End Junior con experiencia en la creación de interfaces de usuario interactivas y responsivas utilizando tecnologías como React, JavaScript, HTML5, CSS3 y Jest. Mi enfoque se centra en construir soluciones eficientes, bien estructuradas y visualmente atractivas, siempre con una fuerte atención al detalle y una pasión por el diseño web y la experiencia de usuario (UX/UI).
+            Soy Desarrolladora Front-End con experiencia en la creación de interfaces de usuario interactivas y responsivas utilizando JavaScript, HTML5, CSS3, React y Jest, con un fuerte enfoque en la calidad del código, el detalle visual y la experiencia de usuario (UX/UI).
           </p>
           <p className="text-lg mb-4">
-            He trabajado en proyectos para clientes de alto perfil como CaixaBank, aplicando metodologías ágiles como Scrum. Tuve la oportunidad de participar en un proyecto galardonado de cálculo y reducción de huella de carbono, lo que me permitió combinar el desarrollo web con la sostenibilidad, aportando soluciones tecnológicas con impacto real.
+            Actualmente formo parte del equipo de desarrollo del Cloud Portal corporativo de Telefónica, donde trabajo en la implementación y mantenimiento de componentes frontend sobre una arquitectura híbrida basada en Joomla (PHP) y JavaScript. Desarrollo componentes reutilizables desde cero, gestionando renderizado dinámico, estilos encapsulados, eventos en cliente y sincronización con backend mediante props, siempre alineando la implementación con diseños de Figma de forma pixel-perfect.
+          </p>
+          <p className="text-lg mb-4">
+            He participado en proyectos reales para clientes de alto perfil como CaixaBank, trabajando con metodologías ágiles (Scrum). En uno de ellos colaboré en un proyecto galardonado centrado en el cálculo y reducción de la huella de carbono, combinando desarrollo web y sostenibilidad para generar impacto real.
           </p>
           <p className="text-lg">
-            Busco un entorno dinámico donde seguir creciendo y aportar valor a través de mi capacidad de aprendizaje continuo y trabajo en equipo. También he desarrollado una aplicación completa tipo calendario, AppCalendar, utilizando React, Node.js y MongoDB, que refleja mi compromiso con la creación de soluciones funcionales y estéticas.
+            Busco seguir creciendo en entornos técnicos y colaborativos, aportando valor a través del aprendizaje continuo, la capacidad de análisis y el trabajo en equipo. Como proyecto personal, he desarrollado una aplicación full-stack tipo calendario (AppCalendar) utilizando React, Node.js y MongoDB, reflejando mi compromiso con la creación de soluciones funcionales, bien estructuradas y visualmente cuidadas.
           </p>
           {/* Botón para descargar el CV */}
           <a
-            href="/documents/cv-soraya-povedano-gallardo.pdf"
+            href="/documents/CV. Soraya_Povedano_Gallardo.pdf"
             download="Curriculum Vitae Soraya Povedano.pdf"
             className="mt-4 inline-block bg-pink-500 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-pink-600 transition duration-300"
           >
